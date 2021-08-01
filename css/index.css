@@ -1,0 +1,215 @@
+:root {
+  --color-1: #485696ff;
+  --color-2: #e7e7e7ff;
+  --background: #f9c784ff;
+  --color-3: #fc7a1eff;
+  --color-4: #f24c00ff;
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-width: 700px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 10%;
+  /* background: var(--background); */
+}
+
+.nav_links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar_item {
+  color: var(--color-1);
+  padding: 16px;
+  font-size: 1.5rem;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-3);
+  /* transition: opacity 0.3s ease-in-out; */
+}
+.navbar_item--active,
+.navbar_item:hover {
+  opacity: 1;
+  color: var(--color-4);
+  text-decoration: underline;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  /* float: left; */
+  /* padding: 10px 0; */
+  cursor: pointer;
+  margin-right: auto;
+}
+.pages {
+  padding: 15px 0;
+  position: relative;
+  flex: 1;
+}
+.page {
+  display: none;
+  /* absolute The element is positioned relative to its first positioned (not static) ancestor element 
+  This helps all the div page  at same position.*/
+  position: absolute;
+  visibility: hidden;
+  max-width: 80%;
+  margin-left: 10%;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: white;
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+}
+
+.homepage_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 0;
+  /* margin: 0 5%; */
+  /* justify-content: center; */
+  background-color: var(--background);
+}
+
+.homepage__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 4px;
+  margin: 24px 0 -24px;
+  border: 3px solid white;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+  transition-property: transform, box-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.homepage_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-3);
+}
+.homepage_title > h1 {
+  font-size: 3rem;
+  line-height: 1.2rem;
+  /* color: var(--color-3); */
+}
+.homepage_jobtitle {
+  font-size: 1.8rem;
+  margin-top: 8px;
+  /* color: var(--color-3); */
+}
+
+.homepage_socialLinks {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.homepage_socialLinks a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 24px;
+  background-color: var(--color-2);
+  margin: 0 1px;
+  color: var(--color-3);
+  text-align: center;
+  /* box-shadow: 0px 3px 8px 0px rgba(247, 135, 7, 0.1); */
+}
+.fa {
+  margin-top: 20%;
+}
+
+.homepage_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* padding-top: 56px; */
+  padding: 30px 30px 50px;
+}
+
+.homepage_aboutMe {
+  font-size: 2rem;
+  margin: 1rem;
+  width: 50%;
+  text-align: left;
+}
+.homepage_aboutMe > h3 {
+  margin-bottom: 1rem;
+}
+.homepage_aboutMe > p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.homepage_contact {
+  margin: 0;
+  padding: 0;
+  line-height: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+.homepage_contact li {
+  margin: 6px 0;
+  text-align: left;
+  /* display: inline-block; */
+}
+.homepage_contact li .title {
+  display: inline-block;
+  width: 120px;
+}
+.homepage_contact li .value {
+  display: inline-block;
+  /* display: contents; */
+  color: var(--color-1);
+}
+
+.footer {
+  color: var(--color-3);
+  text-align: center;
+  margin: 8px 0;
+  display: block;
+  font-size: 1.5rem;
+  /* justify-content: flex-end; */
+}
+.navbar_item--active,
+.navbar_item:hover {
+  opacity: 1;
+}
+
+.navbar_item--active::after,
+.navbar_item:hover::after {
+  width: 24px;
+}
+.page--active {
+  display: block;
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+}
