@@ -1,0 +1,159 @@
+.page_header {
+  background-color: #f9c784ff;
+  padding: 15px 30px;
+  text-align: center;
+  color: #fc7a1eff;
+  font-size: 2rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto 40px;
+}
+
+.row + .row {
+  margin-top: 32px;
+}
+
+.block {
+  flex-basis: calc(50% - 32px);
+}
+
+.block-title h3 {
+  color: #fc7a1eff;
+  font-size: 2rem;
+  margin: 5px 0 25px;
+}
+
+.timeline {
+  border-left: 2px solid #e7e7e7ff;
+  padding: 8px 0 8px 48px;
+  margin-bottom: 36px;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 15px 20px 10px;
+  margin-left: -5px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px 0px #f9c784ff;
+  border-left: 2px solid #fc7a1eff;
+  font-size: 1.3rem;
+}
+
+.timeline-item:hover {
+  box-shadow: 0px 0px 8px 0px #fc7a1eff;
+}
+
+.timeline-item::before {
+  content: "";
+  width: 42px;
+  border-bottom: 2px solid #fc7a1eff;
+  position: absolute;
+  left: -42px;
+  top: 6px;
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  left: -50px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  top: 2px;
+  background-color: #fc7a1eff;
+}
+
+.timeline-item > .item-title {
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.timeline-item > .item-period {
+  color: #fc7a1eff;
+  line-height: 1.2rem;
+  padding: 0 0 8px;
+}
+
+.timeline-item > .item-small {
+  color: #485696ff;
+  margin: 0 0 8px 5px;
+  border-left: 1px solid #485696ff;
+  padding-left: 8px;
+}
+
+.timeline-item > .item-description {
+  font-size: 1.2rem;
+}
+
+.skill-info {
+  margin: 16px 0;
+}
+
+.skills-info h4 {
+  font-size: 1rem;
+  margin: 0 0 8px;
+}
+
+.skill {
+  margin: 16px 0;
+}
+
+.skill > h4 {
+  font-size: 1.2rem;
+}
+
+.skill-level {
+  position: relative;
+  height: 16px;
+  background-color: #e7e7e7ff;
+}
+
+.skill-level::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fc7a1eff;
+}
+
+/*Skill 1*/
+.skill-1::after {
+  width: 88%;
+}
+
+/*Skill 2*/
+.skill-2::after {
+  width: 75%;
+}
+
+/*Skill 3*/
+.skill-3::after {
+  width: 60%;
+}
+
+/*Skill 4*/
+.skill-4::after {
+  width: 95%;
+}
+
+/*Skill 5*/
+.skill-5::after {
+  width: 75%;
+}
+
+/*Skill 6*/
+.skill-6::after {
+  width: 92%;
+}
+
+/* Skills */
+
+/*# sourceMappingURL=resume.css.map */
