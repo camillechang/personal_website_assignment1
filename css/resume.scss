@@ -27,7 +27,7 @@ $--color-4: #f24c00ff;
 .block {
   flex-basis: calc(50% - 32px);
 }
-.block-title h3 {
+.block-title > h3 {
   color: $--color-3;
   font-size: 2rem;
   margin: 5px 0 25px;
