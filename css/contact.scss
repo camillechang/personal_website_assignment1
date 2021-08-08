@@ -1,0 +1,132 @@
+@import "./global.scss";
+// service form starts
+
+.mySlides {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: url("../images/services/5.png") no-repeat center center;
+  background-color: $--background;
+  background-size: cover;
+  border: 2px solid coral;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mySlides {
+  // position: relative;
+  width: 100%;
+  background-color: blanchedalmond;
+}
+/* Hide the images by default */
+
+.slideText {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $--color-3;
+  font-size: 3rem;
+  background-color: $--color-2;
+}
+
+//slide ends
+.imgGallery {
+  width: 100%;
+  // height: 100%;
+  display: flex;
+  flex-direction: row;
+  // flex-wrap: wrap;
+}
+.imgColumn {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid $--color-3;
+  width: 30%;
+}
+
+.imgColumn > img {
+  width: 100%;
+  height: 60%;
+}
+.desc {
+  margin: 10px 10px;
+  background-color: $--background;
+  text-align: center;
+}
+
+.desc h3 {
+  // margin-left: 5px;
+  color: $--color-3;
+  font-size: 2rem;
+}
+
+.desc > p {
+  // margin-left: 5px;
+  font-size: 1.5rem;
+  // width: 20%;
+  height: 20%;
+}
+
+// Contact form starts -------------
+
+//use this div to control all son elements marign
+.left-touch {
+  margin-left: 20px;
+}
+
+.suggestions {
+  font-size: 1.5rem;
+  // color: $--background;
+}
+
+// right form
+.rightForm {
+  border: 10px solid transparent;
+  padding: 15px 0;
+  border-image: url("../images/border.png") 20% round;
+}
+.contact-form {
+  padding: 1.5rem 0;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.label {
+  text-transform: uppercase;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+.form-input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 36px;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5rem;
+  margin-bottom: 10px;
+}
+.g-recaptcha {
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: $--color-3;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  height: 40px;
+  width: 120px;
+  cursor: pointer;
+}

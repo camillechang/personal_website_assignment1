@@ -1,8 +1,4 @@
-$--color-1: #485696ff;
-$--color-2: #e7e7e7ff;
-$--background: #f9c784ff;
-$--color-3: #fc7a1eff;
-$--color-4: #f24c00ff;
+@import "./global.scss";
 
 .page_header {
   background-color: $--background;
@@ -12,7 +8,7 @@ $--color-4: #f24c00ff;
   font-size: 2rem;
 }
 
-.row {
+.localrow {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -20,14 +16,14 @@ $--color-4: #f24c00ff;
   // flex-basis: calc(50%-32px);
 }
 
-.row + .row {
+.localrow + .localrow {
   margin-top: 32px;
 }
 
 .block {
   flex-basis: calc(50% - 32px);
 }
-.block-title h3 {
+.block-title > h3 {
   color: $--color-3;
   font-size: 2rem;
   margin: 5px 0 25px;
