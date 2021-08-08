@@ -1,0 +1,75 @@
+.imgGallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imgColumn {
+  padding: 5px;
+}
+
+.imgColumn > img {
+  max-width: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.left-touch {
+  margin-left: 20px;
+}
+
+.suggestions {
+  font-size: 1.5rem;
+}
+
+.rightForm {
+  border: 10px solid transparent;
+  padding: 15px 0;
+  border-image: url("../images/border.png") 20% round;
+}
+
+.contact-form {
+  padding: 1.5rem 0;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.label {
+  text-transform: uppercase;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 36px;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.g-recaptcha {
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: #fc7a1eff;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  height: 40px;
+  width: 120px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=contact.css.map */

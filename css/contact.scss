@@ -1,0 +1,82 @@
+$--color-1: #485696ff;
+$--color-2: #e7e7e7ff;
+$--background: #f9c784ff;
+$--color-3: #fc7a1eff;
+$--color-4: #f24c00ff;
+
+// service form starts
+
+.imgGallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.imgColumn {
+  // width: 50%;
+  padding: 5px;
+}
+
+.imgColumn > img {
+  max-width: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+// Contact form starts -------------
+
+//use this div to control all son elements marign
+.left-touch {
+  margin-left: 20px;
+}
+
+.suggestions {
+  font-size: 1.5rem;
+  // color: $--background;
+}
+
+// right form
+.rightForm {
+  border: 10px solid transparent;
+  padding: 15px 0;
+  border-image: url("../images/border.png") 20% round;
+}
+.contact-form {
+  padding: 1.5rem 0;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.label {
+  text-transform: uppercase;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+.form-input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 36px;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5rem;
+  margin-bottom: 10px;
+}
+.g-recaptcha {
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: $--color-3;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  height: 40px;
+  width: 120px;
+  cursor: pointer;
+}
