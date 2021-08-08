@@ -1,7 +1,7 @@
 // Pure javascript
 function createNav() {
   var previous = "";
-  var current = "SERVICES";
+  var current = "HOME";
 
   changePage();
   changeNavItem();
