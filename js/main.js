@@ -5,13 +5,13 @@ function createNav() {
 
   changePage();
   changeNavItem();
-  console.log("----line8---------");
+  // console.log("----line8---------");
   document.querySelectorAll(".navbar_item").forEach(function (element) {
     // navbar click event
     element.onclick = function (event) {
       event.preventDefault();
       var to = event.target.getAttribute("href");
-      console.log(to);
+      // console.log(to);
       push(to);
     };
   });
@@ -30,12 +30,12 @@ function createNav() {
     if (previous) {
       var previousPage = document.querySelector("#" + previous);
       previousPage.classList.remove(className);
-      console.log(previousPage);
+      // console.log(previousPage);
     }
 
     var page = document.querySelector("#" + current);
     page.classList.add(className);
-    console.log(page);
+    // console.log(page);
   }
 
   function changeNavItem() {
