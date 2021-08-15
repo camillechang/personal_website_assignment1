@@ -162,6 +162,7 @@ body {
   margin: 1rem;
   width: 50%;
   text-align: left;
+  color: #fc7a1eff;
 }
 
 .homepage_aboutMe > h3 {
@@ -190,12 +191,13 @@ body {
 .homepage_contact li .title {
   display: inline-block;
   width: 120px;
+  color: #fc7a1eff;
 }
 
 .homepage_contact li .value {
   display: inline-block;
   /* display: contents; */
-  color: #485696ff;
+  color: #f24c00ff;
 }
 
 .footer {
